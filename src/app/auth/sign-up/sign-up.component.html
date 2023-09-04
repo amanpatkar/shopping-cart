@@ -1,0 +1,28 @@
+<div class="row container-fluid parent">
+    <div class="col-6">
+        <form #loginForm="ngForm" (ngSubmit)="getSignUp(loginForm)">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" ngModel name="email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" ngModel name="phone">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" ngModel name="password">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"> Confirm Password</label>
+            <input type="c_password" class="form-control" id="exampleFormControlInput1" placeholder="confirm password" ngModel name="c_password">
+          </div>
+          <div>
+            <p>Already registered <b><a routerLink="/login">Login</a></b></p>
+          </div>
+          <div>
+            <button type="submit" class="form-control btn btn-primary">SignUp</button>
+          </div>
+        </form>
+    </div>
+</div>

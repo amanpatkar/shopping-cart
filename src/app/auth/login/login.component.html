@@ -1,0 +1,20 @@
+<div class="row container-fluid parent">
+    <div class="col-6">
+        <form #loginForm="ngForm" (ngSubmit)="getLogin(loginForm)">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" ngModel name="email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password" ngModel name="password">
+          </div>
+          <div>
+            <p>New to your workplace <b><a routerLink="/sign-up"> Sign-up</a></b></p>
+          </div>
+          <div>
+            <button type="submit" class="form-control btn btn-primary">Login</button>
+          </div>
+        </form>
+    </div>
+</div>
