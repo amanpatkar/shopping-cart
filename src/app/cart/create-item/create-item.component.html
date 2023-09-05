@@ -1,0 +1,66 @@
+<div class="parent">
+    <div class="">
+        <ul>
+            <li><a routerLink="/login">LogIn</a> </li>
+            <li><a routerLink="/login">LogOut</a> </li>
+            <li><a routerLink="/sign-up">SignUp</a> </li>
+        </ul>
+    </div>
+    <div class="form-group w-50">
+        <input type="text" placeholder="search for your items" class="form-control ">
+    </div>
+    <ul>
+        <li><a routerLink="/dashboard">Home</a> </li>
+        <li><a routerLink="/product-list">Cart</a> </li>
+        <li><a routerLink="/create-item">Add To List</a> </li>
+    </ul>
+    </div>
+
+   
+<div>
+    <h2 class="text-center m-3"><i>Add Your Items Into The List of Different Categories</i></h2>
+
+    <div class="row container-fluid parent_1">
+        <div class="col-6">
+            <form #createList="ngForm" (ngSubmit)="addNewItem(createList)">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name Of Product</label>
+                <input type="string" class="form-control" id="exampleFormControlInput1" placeholder="Enter name of Product" ngModel name="name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Category</label>
+                <select name="category" id="category" ngModel class="form-select" >
+                    <option value="electronics" selected>Electronics</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Handbags">Handbags</option>
+                    <option value="Groceries">Groceries</option>
+                    
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Price</label>
+                <input type="string" class="form-control" id="exampleFormControlInput1" placeholder="price" ngModel name="price">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> Description</label>
+                <input type="string" class="form-control" id="exampleFormControlInput1" placeholder="product Description" ngModel name="description">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> Procduct Image</label>
+                <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="product Description" ngModel name="image" (change)="getSelectedImage($event)">
+              </div>
+              <div class="mb-3" *ngIf="imagePreview !== '' && imagePreview">
+                <label for="exampleFormControlTextarea1" class="form-label"> Selected Image</label>
+                <div class="image-preview" >
+                    <img [src]="imagePreview" [alt]="" height="80" width="80">
+                </div>
+              </div>
+              <div>
+                <button type="submit" class="form-control btn btn-success">Add To List</button>
+              </div>
+            
+            </form>
+        </div>
+    </div>
+</div>

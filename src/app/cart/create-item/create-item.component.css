@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 12px);
-    background-color: blue;
-    color: white;
     display: flex;
-    
+}
+.image-preview{
+    height:5rem;
+    margin: 1rem 0;
 }

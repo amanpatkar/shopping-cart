@@ -1,7 +1,10 @@
-.parent{
+.parent_1{
     display: flex;
     align-items: center;
     justify-content: center;
-    width:100vw;
-    height: 80vh;
+    width: 100%;
+    height: calc(100vh - 12px);
+    background-color: blue;
+    color: white;
+    display: flex;
 }

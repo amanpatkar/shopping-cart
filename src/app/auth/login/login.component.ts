@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
    this.auth.login().subscribe((response:any) =>{
     response.forEach((element:any) => {
       if(element.email === form.value.email && element.password === form.value.password){
-       this.router.navigate(['product-list'])
+       this.router.navigate(['/dashboard'])
     }
     });
 

@@ -1,4 +1,4 @@
-<div class="row container-fluid parent">
+<div class="row container-fluid parent_1">
     <div class="col-6">
         <form #loginForm="ngForm" (ngSubmit)="getSignUp(loginForm)">
         <div class="mb-3">
@@ -7,7 +7,7 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Phone</label>
-            <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" ngModel name="phone">
+            <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="Phone" ngModel name="phone">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Password</label>
@@ -18,10 +18,10 @@
             <input type="c_password" class="form-control" id="exampleFormControlInput1" placeholder="confirm password" ngModel name="c_password">
           </div>
           <div>
-            <p>Already registered <b><a routerLink="/login">Login</a></b></p>
+            <p>Already registered <b><a routerLink="/login" class="text-danger">Login</a></b></p>
           </div>
           <div>
-            <button type="submit" class="form-control btn btn-primary">SignUp</button>
+            <button type="submit" class="form-control btn btn-warning">SignUp</button>
           </div>
         </form>
     </div>

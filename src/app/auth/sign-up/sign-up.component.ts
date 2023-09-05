@@ -18,7 +18,7 @@ export class SignUpComponent implements OnInit{
   getSignUp(form:NgForm){
   console.log(form.value)
   this.auth.createUser(form.value).subscribe((response:SignedUpUser) =>{
-    this.router.navigate(['product-list'])
+    this.router.navigate(['/dashboard'])
    })
   }
 }
