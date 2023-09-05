@@ -26,3 +26,20 @@ ul li a{
 ul{
     margin-bottom: 0px;
 }
+.custom{
+ 
+    flex-direction: column;
+    color: black;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.desc{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 120px;
+}

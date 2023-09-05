@@ -57,7 +57,13 @@
                 </div>
               </div>
               <div>
-                <button type="submit" class="form-control btn btn-success">Add To List</button>
+                
+                <button type="submit" class="form-control btn btn-success" >
+                  <span class="spinner-border spinner-border-sm" aria-hidden="true" *ngIf="toggle"></span>
+                  <span  *ngIf="!toggle">
+                    Add To List
+                  </span>
+                </button>
               </div>
             
             </form>
